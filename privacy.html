@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 — PomPom Ville</title>
+<style>
+  :root {
+    --bg: #faf7f1;
+    --bg-raised: #ffffff;
+    --text: #2a241c;
+    --text-dim: #6b6255;
+    --heading: #1c2340;
+    --accent: #b8790f;
+    --accent-dim: #c99a3e;
+    --rule: #e4dbc8;
+    --focus: #7a5a12;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101733;
+      --bg-raised: #1a2247;
+      --text: #e9e4d8;
+      --text-dim: #a9a294;
+      --heading: #f3ecd9;
+      --accent: #ffc24b;
+      --accent-dim: #d9ac52;
+      --rule: #333a5c;
+      --focus: #e7c477;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", "Noto Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2 {
+    font-family: Georgia, "Iowan Old Style", "Nanum Myeongjo", "Noto Serif KR", ui-serif, serif;
+    color: var(--heading);
+    text-wrap: balance;
+    font-weight: 600;
+  }
+
+  .page {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  a.back {
+    display: inline-block;
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-bottom: 1.4rem;
+  }
+  a.back:hover { color: var(--accent); }
+
+  header.masthead { margin-bottom: 3rem; }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    margin: 0.5rem 0 0.4rem;
+    line-height: 1.15;
+  }
+
+  .subtitle { color: var(--text-dim); font-size: 0.95rem; margin: 0; }
+
+  nav.toc {
+    background: var(--bg-raised);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.1rem 1.4rem;
+    margin: 2.2rem 0 3rem;
+  }
+
+  nav.toc p {
+    margin: 0 0 0.6rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  nav.toc ol {
+    margin: 0; padding: 0; list-style: none;
+    display: grid; gap: 0.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+
+  nav.toc a { color: var(--text); text-decoration: none; font-size: 0.92rem; }
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); }
+
+  section {
+    padding-top: 2.4rem;
+    border-top: 1px solid var(--rule);
+    scroll-margin-top: 1.5rem;
+  }
+  section:first-of-type { border-top: none; padding-top: 0; }
+
+  h2 { font-size: 1.3rem; margin: 0 0 0.9rem; }
+  p { margin: 0 0 1rem; max-width: 40rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+  li { margin-bottom: 0.5rem; max-width: 38rem; }
+  li b, dt { color: var(--heading); }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-dim); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 2px;
+  }
+
+  code {
+    background: var(--bg-raised);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 0.05em 0.4em;
+    font-size: 0.88em;
+  }
+
+  .contact-card {
+    background: var(--bg-raised);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.3rem 1.5rem;
+    display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; align-items: baseline;
+  }
+  .contact-card dt {
+    font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-dim); margin: 0; flex: 0 0 100%;
+  }
+  .contact-card dd { margin: 0 0 0.7rem; font-size: 1rem; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 480px) {
+    .page { padding: 3rem 1.1rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <a class="back" href="index.html">← PomPom Ville 홈으로</a>
+
+  <header class="masthead">
+    <span class="eyebrow">🫧 PomPom Ville</span>
+    <h1>개인정보처리방침</h1>
+    <p class="subtitle">시행일: 2026년 9월 19일</p>
+  </header>
+
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#collect">1. 수집하는 정보</a></li>
+      <li><a href="#ads">2. 광고 (Google AdMob)</a></li>
+      <li><a href="#sharing">3. 제3자 제공</a></li>
+      <li><a href="#storage">4. 저장 및 보관</a></li>
+      <li><a href="#choices">5. 선택 사항</a></li>
+      <li><a href="#children">6. 아동의 개인정보</a></li>
+      <li><a href="#changes">7. 방침 변경</a></li>
+      <li><a href="#contact">8. 문의</a></li>
+    </ol>
+  </nav>
+
+  <p>PomPom Ville은 계정 가입이나 로그인 없이 즐기는 버블 팝 퍼즐 게임입니다. 진행 상황과 설정은 기기 안에만 저장되며, 저희는 그 정보를 볼 수도 수집할 수도 없습니다. 이 방침은 앱이 다루는 정보와, 광고 표시를 위해 Google AdMob이 수집하는 정보를 설명합니다.</p>
+
+  <section id="collect">
+    <h2>1. 수집하는 정보</h2>
+    <ul>
+      <li><b>게임 진행 상황.</b> 클리어한 스테이지, 별점, 최고 점수, 보유 아이템 개수, 목숨(하트) 상태는 전부 기기 안 로컬 저장소에만 저장되며, 어떤 서버로도 전송되지 않습니다.</li>
+      <li><b>언어·설정.</b> 선택한 표시 언어와 색맹 보조 기호 설정도 같은 방식으로 기기에만 저장됩니다.</li>
+      <li><b>계정 정보.</b> 수집하지 않습니다 — 회원가입·로그인 기능 자체가 없습니다.</li>
+      <li><b>위치·카메라·연락처.</b> 수집하지 않으며, 관련 권한을 요청하지도 않습니다.</li>
+    </ul>
+  </section>
+
+  <section id="ads">
+    <h2>2. 광고 (Google AdMob)</h2>
+    <p>목숨 충전, 아이템 획득, 추가 발사 기회를 위해 "광고 보기"를 선택하면 Google AdMob이 제공하는 보상형 광고가 표시됩니다. 이 과정에서 AdMob SDK는 광고 식별자(Android Advertising ID 등), 기기 정보, 광고 상호작용 데이터를 수집해 Google과 공유합니다. 저희는 이 데이터를 직접 수집·저장하지 않으며, 처리는 전적으로 사용자 기기와 Google 사이에서 이루어집니다.</p>
+    <p>Google이 광고 서비스를 위해 수집하는 정보는 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a>과 <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob이 정보를 사용하는 방식</a>에서 확인할 수 있습니다.</p>
+  </section>
+
+  <section id="sharing">
+    <h2>3. 제3자 제공</h2>
+    <p>이 앱과 관련된 제3자는 <b>Google AdMob</b>뿐입니다. 저희는 사용자 데이터를 판매하거나, 분석(애널리틱스) 목적으로 수집하거나, AdMob 외의 다른 곳과 공유하지 않습니다 — 게임 진행 상황이 기기를 벗어나지 않으니, 애초에 저희 쪽에서 공유할 데이터가 없습니다.</p>
+  </section>
+
+  <section id="storage">
+    <h2>4. 저장 및 보관</h2>
+    <p>진행 상황·설정은 앱이 설치되어 있는 동안 기기의 로컬 저장소(shared preferences)에 남습니다. 앱을 삭제하면 이 정보도 기기에서 함께 삭제되며, 저희 쪽에 남는 사본은 없습니다.</p>
+  </section>
+
+  <section id="choices">
+    <h2>5. 선택 사항</h2>
+    <ul>
+      <li><b>광고 개인 최적화.</b> 기기의 <code>설정 → 개인정보 보호 → 광고</code>(Android 버전에 따라 위치가 다를 수 있음)에서 광고 개인 최적화를 끄거나 광고 식별자를 재설정할 수 있습니다.</li>
+      <li><b>진행 상황.</b> 앱을 삭제하면 저장된 모든 데이터가 함께 삭제됩니다.</li>
+      <li><b>권한.</b> 이 앱은 광고 요청·표시에 필요한 인터넷 접근 권한만 사용합니다.</li>
+    </ul>
+  </section>
+
+  <section id="children">
+    <h2>6. 아동의 개인정보</h2>
+    <p>PomPom Ville은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다. 아동이 이 앱을 통해 정보를 제공했다고 판단되는 경우 아래 연락처로 알려주시면 조치하겠습니다.</p>
+  </section>
+
+  <section id="changes">
+    <h2>7. 방침 변경</h2>
+    <p>이 방침이 변경되면 위의 시행일을 갱신하고, 개정된 내용을 같은 주소에 게시합니다. 변경 이후에도 앱을 계속 사용하시면 갱신된 방침에 동의하신 것으로 간주됩니다.</p>
+  </section>
+
+  <section id="contact">
+    <h2>8. 문의</h2>
+    <p>이 방침이나 앱에 대해 궁금한 점은 아래로 연락해 주세요.</p>
+    <dl class="contact-card">
+      <dt>이메일</dt>
+      <dd><a href="mailto:kakimind@gmail.com">kakimind@gmail.com</a></dd>
+      <dt>앱</dt>
+      <dd>PomPom Ville (Android)</dd>
+    </dl>
+  </section>
+
+  <footer>PomPom Ville — 개인정보처리방침</footer>
+</div>
+
+</body>
+</html>
